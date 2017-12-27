@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "25_1.js",
+  "sourceRoot": "",
+  "sources": [
+    "25_1.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA;AAAA,MAAA;;EACA,cAAA,GAAiB,QAAA,CAAC,MAAD,EAAQ,MAAR,EAAe,UAAf,CAAA;AACJ,QAAA,IAAA,EAAA,OAAA,EAAA,IAAA,EAAA,QAAA,EAAA,QAAA,EAAA;IAAA,OAAA,GAAS;IACT,OAAO,CAAC,GAAR,CAAY,UAAZ;IACA,IAAA,GAAO,MAAA,GAAO;IACd,OAAO,CAAC,GAAR,CAAY,IAAZ;IACA,IAAA,GAAO,UAAA,GAAW;IAClB,KAAA,GAAS,UAAA,GAAW;IACpB,OAAO,CAAC,GAAR,CAAY,KAAZ;IACA,QAAA,GAAW,IAAA,GAAK;IAChB,QAAA,GAAW,KAAA,GAAM;WAEjB,OAAO,CAAC,GAAR,CAAa,CAAC,IAAD,EAAM,QAAN,EAAe,QAAf,CAAb;EAXI;;EAajB,cAAA,CAAe,GAAf,EAAmB,GAAnB,EAAuB,EAAvB;AAdA",
+  "sourcesContent": [
+    "## race condtions##\r\ntortoiseRacing = (speedA,speedB,disCovered) ->\r\n             results =[]\r\n             console.log disCovered\r\n             diff = speedA-speedB\r\n             console.log diff\r\n             time = disCovered/diff\r\n             timeX =  disCovered%diff\r\n             console.log timeX\r\n             timeMins = time*60\r\n             timeSecs = timeX*60\r\n\r\n             console.log ({time,timeMins,timeSecs})\r\n\r\ntortoiseRacing(850,720,70)\r\n             \r\n"
+  ]
+}

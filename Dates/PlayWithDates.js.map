@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "PlayWithDates.js",
+  "sourceRoot": "",
+  "sources": [
+    "PlayWithDates.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA;AAAA,MAAA,eAAA,EAAA,gBAAA,EAAA,eAAA,EAAA,eAAA,EAAA;;EAEA,eAAA,GAAkB;;EAClB,eAAA,GAAkB,eAAA,GAAkB;;EACpC,gBAAA,GAAmB,eAAA,GAAkB;;EACrC,eAAA,GAAkB,gBAAA,GAAmB;;EAErC,cAAA,GAAgB,QAAA,CAAC,SAAD,EAAW,OAAX,EAAmB,QAAM,MAAzB,CAAA;AACJ,QAAA;IAAA,OAAA,GAAU,OAAA,GAAU;IACpB,OAAO,CAAC,GAAR,CAAY,OAAZ;IACA,OAAO,CAAC,GAAR,CAAY,KAAZ;AACA,YAAO,KAAP;AAAA,WACS,MADT;QAEQ,OAAO,CAAC,GAAR,CAAa,eAAb;eACA,OAAA,GAAQ;AAHhB,WAIU,MAJV;eAKQ,OAAA,GAAQ;AALhB;EAJI;;EAYhB,MAAM,CAAC,OAAP,GACI;IAAA,YAAA,EAAe;EAAf;AApBJ",
+  "sourcesContent": [
+    "#Define some constants\r\n\r\nTIME_IN_ONE_SEC = 1000\r\nTIME_IN_ONE_MIN = TIME_IN_ONE_SEC * 60\r\nTIME_IN_ONE_HOUR = TIME_IN_ONE_MIN * 60\r\nTIME_IN_ONE_DAY = TIME_IN_ONE_HOUR * 24\r\n\r\ndateDifference= (startDate,endDate,units='Days') ->\r\n            elpased = endDate - startDate\r\n            console.log elpased\r\n            console.log units\r\n            switch units\r\n                when 'Days'\r\n                    console.log  TIME_IN_ONE_DAY\r\n                    elpased/TIME_IN_ONE_DAY\r\n                when  'Mins'\r\n                    elpased/TIME_IN_ONE_MIN\r\n                \r\n\r\nmodule.exports =  \r\n    findDateDiff : dateDifference\r\n\r\n        "
+  ]
+}
